@@ -1,10 +1,10 @@
 function enviarMensagem(){
-	var celular = "5531996520278"
+	var celular = "33648564760"
     celular = celular.replace(/\D/g,''); //Deixar apenas números
   
   //Verificar se tem DDI e adicionar se não tiver
-  if(celular.length < 13){
-  	celular = "55" + celular;
+  if(celular.length < 9){
+  	celular = "33" + celular;
   }
   
   var nome = document.querySelector("#nome").value;
@@ -32,7 +32,7 @@ function enviarMensagem(){
   }
   
   window.open(urlApi + "?phone=" + celular + "&text=" + "Nome : " + nome + "%0A" + "E-mail : " + email + "%0A" + "Data : " + data + "%0A" + "Hora : " + hora + "%0A" + "Assunto : " + assunto + "%0A" + "Mensagem : " + texto, "_blank");
-	//Obs.. use "_system", no lugar de blank, caso você esteja usando Phonegap / Cordova / Ionic ou qualquer um baseado em webview;
+	
 }
 
 

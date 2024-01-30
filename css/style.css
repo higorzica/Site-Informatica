@@ -163,6 +163,7 @@ header.main-header{background: url(../images/04.jpg) center center;background-si
 .img-marcas{
     width: 100%;
     height: 100px;
+    object-fit: contain;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -258,8 +259,8 @@ footer .cleint-say .cleint-info{}
 footer .cleint-say .cleint-info img{max-width: 60px;margin-right: 10px;}
 footer .cleint-say .sub-c{font-size: 50px;}
 
-footer .contact-form{max-width: 500px;margin: 120px auto; padding: 10px 25px 25px; border-radius: 4px;position:relative;z-index: 2;overflow: hidden;text-align: center;display:block;color: #fff;}
-footer .contact-form:after{content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0;background: rgba(255, 255, 255, 0.5)  url(../images/main.jpg) no-repeat center -350px;z-index: -1;-webkit-filter: blur(15px);filter: blur(15px);}
+footer .contact-form{max-width: 500px;margin: 120px auto; padding: 10px 25px 25px; border-radius: 8px;position:relative;z-index: 2;overflow: hidden;text-align: center;display:block;color: #fff;}
+footer .contact-form:after{content: '';position: absolute;width: 100%;height: 100%;left: 0;top: 0;z-index: -1;-webkit-filter: blur(15px);filter: blur(15px); background-color: #000;}
 footer .contact-form h3{font-size: 39px;}
 footer .contact-form input, .contact-form textarea{background: #fff;border: none;}
 
